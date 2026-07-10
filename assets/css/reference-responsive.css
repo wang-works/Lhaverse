@@ -1,0 +1,207 @@
+/* The supplied designs carry their desktop styles inline. These rules only adapt
+   those exact compositions below the tablet breakpoint. */
+@media (max-width: 720px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body > div[style*="min-width: 320px"] {
+    min-width: 0 !important;
+  }
+
+  nav {
+    flex-direction: column !important;
+    justify-content: center !important;
+    gap: 12px !important;
+    padding: 16px 20px !important;
+    text-align: center;
+  }
+
+  nav > a:first-child {
+    font-size: 32px !important;
+  }
+
+  nav > div {
+    width: 100%;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 10px 16px !important;
+    font-size: 11px !important;
+    letter-spacing: 0.08em !important;
+  }
+
+  [data-screen-label] {
+    box-sizing: border-box;
+  }
+
+  [data-screen-label="Hero"] {
+    min-height: 760px !important;
+  }
+
+  [data-screen-label="Hero"] > div[style*="flex: 1"] {
+    padding: 0 20px 42px !important;
+  }
+
+  [data-screen-label="Hero"] > div[style*="flex: 1"] > div:last-child {
+    flex-wrap: wrap !important;
+    gap: 6px 10px !important;
+  }
+
+  [data-screen-label="Story"],
+  [data-screen-label="Craft"] {
+    grid-template-columns: 1fr !important;
+    gap: 36px !important;
+    padding: 72px 20px !important;
+  }
+
+  [data-screen-label="Story"] > div[style*="grid-template-columns"],
+  [data-screen-label="Products"] > div > div[style*="grid-template-columns"],
+  [data-screen-label="Craft"] > div,
+  [data-screen-label="Footer"] > div > div[style*="grid-template-columns"],
+  [data-screen-label="Values"] > div,
+  [data-screen-label="Wool care"] > div > div[style*="grid-template-columns"],
+  [data-screen-label="Camel product"] > div,
+  [data-screen-label="Olive product"] > div,
+  [data-screen-label="Coming soon"] > div,
+  [data-screen-label="Contact"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  [data-screen-label="Products"] {
+    padding: 72px 20px !important;
+  }
+
+  [data-screen-label="Products"] > div > div[style*="grid-template-columns"] {
+    gap: 20px !important;
+  }
+
+  [data-screen-label="Products"] a > div[style*="padding: 26px"] {
+    padding: 20px !important;
+  }
+
+  [data-screen-label="Lifestyle"] {
+    min-height: 620px !important;
+  }
+
+  [data-screen-label="Lifestyle"] > div:last-child {
+    padding: 0 20px 40px !important;
+  }
+
+  [data-screen-label="Catalog head"] {
+    padding: 60px 20px 40px !important;
+  }
+
+  [data-screen-label="Camel product"] {
+    gap: 38px !important;
+    padding: 0 20px 72px !important;
+  }
+
+  [data-screen-label="Olive product"] {
+    padding: 72px 20px !important;
+  }
+
+  [data-screen-label="Olive product"] > div {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  [data-screen-label="Olive product"] > div > div,
+  [data-screen-label="Camel product"] > div {
+    grid-template-columns: 1fr !important;
+    gap: 38px !important;
+  }
+
+  [data-screen-label="Coming soon"],
+  [data-screen-label="Values"] {
+    padding: 72px 20px !important;
+  }
+
+  [data-screen-label="Coming soon"] > div,
+  [data-screen-label="Values"] > div {
+    gap: 16px !important;
+  }
+
+  [data-screen-label="Wool care"] {
+    padding: 72px 20px !important;
+  }
+
+  [data-screen-label="Wool care"] > div > div[style*="grid-template-columns"] {
+    gap: 16px !important;
+  }
+
+  [data-screen-label="CTA"] {
+    padding: 64px 20px !important;
+  }
+
+  [data-screen-label="Story hero"] img {
+    aspect-ratio: 4 / 3 !important;
+  }
+
+  [data-screen-label="Contact"] {
+    gap: 48px !important;
+    padding: 64px 20px !important;
+  }
+
+  [data-reference-send] {
+    padding: 28px 20px !important;
+  }
+
+  [data-reference-send] > div:first-child {
+    grid-template-columns: 1fr !important;
+  }
+
+  [data-reference-send] button {
+    align-self: stretch !important;
+  }
+
+  [data-screen-label="Footer"] > div {
+    padding: 52px 20px 32px !important;
+  }
+
+  [data-screen-label="Footer"] > div > div[style*="grid-template-columns"] {
+    gap: 32px !important;
+    padding-bottom: 36px !important;
+  }
+
+  [data-screen-label="Footer"] form {
+    flex-direction: column !important;
+  }
+
+  [data-screen-label="Footer"] form > * {
+    box-sizing: border-box;
+    width: 100% !important;
+  }
+
+  [data-screen-label="Footer"] > div > div[style*="display: flex"] {
+    gap: 16px !important;
+  }
+
+  body > div[style*="margin-top: -1px"] > div {
+    padding: 0 20px 28px !important;
+  }
+
+  body > div[style*="margin-top: -1px"] > div > div {
+    align-items: flex-start !important;
+    gap: 12px !important;
+    padding-top: 20px !important;
+    font-size: 11px !important;
+    letter-spacing: 0.1em !important;
+  }
+}
+
+@media (max-width: 380px) {
+  [data-screen-label="Hero"] {
+    min-height: 720px !important;
+  }
+
+  [data-screen-label="Hero"] h1 {
+    font-size: 48px !important;
+  }
+
+  [data-screen-label="Hero"] > div[style*="flex: 1"] > div:last-child > a {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+}
