@@ -1,0 +1,311 @@
+<style>
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/34e39628-974f-4a81-9328-2a1e1e70abf5.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/ac8c3a53-a1d1-4c96-8e1e-7b98a87dae9c.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/bd50dfed-4732-41bb-9ff7-aed53ac8cb40.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/57ef86c8-5c08-4993-8347-eab384e14424.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/34e39628-974f-4a81-9328-2a1e1e70abf5.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/ac8c3a53-a1d1-4c96-8e1e-7b98a87dae9c.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/bd50dfed-4732-41bb-9ff7-aed53ac8cb40.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/57ef86c8-5c08-4993-8347-eab384e14424.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/9c9005ff-be05-4571-8a2e-d9e7a465d587.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/10f3a985-ce08-418e-a4eb-4d65df52d6d0.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/4f6d7aea-e170-4909-82f3-bf437c45bab8.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/1cd432f9-b927-4aeb-a535-1bfcfaed0784.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/2a888b3e-601a-4d4a-a852-8a72d1131cb1.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/7172d9e4-cc4b-4072-856b-795a8a520b27.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/2a888b3e-601a-4d4a-a852-8a72d1131cb1.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/7172d9e4-cc4b-4072-856b-795a8a520b27.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/2a888b3e-601a-4d4a-a852-8a72d1131cb1.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/7172d9e4-cc4b-4072-856b-795a8a520b27.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/2a888b3e-601a-4d4a-a852-8a72d1131cb1.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/7172d9e4-cc4b-4072-856b-795a8a520b27.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+    html, body { margin: 0; padding: 0; background: #F4EFE5; }
+    body { font-family: 'Karla', sans-serif; color: #26221A; }
+    a { color: #33402C; }
+    a:hover { color: #C97A2B; }
+    ::selection { background: #C97A2B; color: #FFF8EC; }
+  
+</style>
+<div style="background: #F4EFE5; min-width: 320px">
+
+  <!-- Nav -->
+  <nav style="display: flex; align-items: center; justify-content: space-between; padding: 22px 48px; border-bottom: 1px solid rgba(38,34,26,0.12)">
+    <a href="{{ '/' | relative_url }}" style="font-family: 'Caveat', cursive; font-size: 34px; font-weight: 600; color: #26221A; text-decoration: none">Lhaverse</a>
+    <div style="display: flex; align-items: center; gap: 36px; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600">
+      <a href="{{ '/blankets/' | relative_url }}" style="color: #C97A2B; text-decoration: none">Blankets</a>
+      <a href="{{ '/our-story/' | relative_url }}" style="color: #26221A; text-decoration: none">Our Story</a>
+      <a href="{{ '/contact/' | relative_url }}" style="color: #26221A; text-decoration: none">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Page head -->
+  <div data-screen-label="Catalog head" style="max-width: 1200px; margin: 0 auto; padding: 84px 48px 56px">
+    <div style="font-family: 'Caveat', cursive; font-size: 28px; color: #C97A2B; margin-bottom: 4px">the collection</div>
+    <h1 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(44px, 5.5vw, 76px); line-height: 1.02; margin: 0 0 18px">Mountain Wool Blankets</h1>
+    <p style="font-size: 17px; line-height: 1.7; color: #4C463A; max-width: 560px; margin: 0">One blanket, two temperaments. Both woven from the same dense 80/20 wool blend — 130 × 180 cm, 1.4 kg of packable warmth.</p>
+  </div>
+
+  <!-- Camel -->
+  <div id="camel" data-screen-label="Camel product" style="max-width: 1200px; margin: 0 auto; padding: 0 48px 96px">
+    <div style="display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 64px; align-items: center">
+      <div style="display: grid; gap: 18px">
+        <div style="background: #FFFFFF; border-radius: 6px; aspect-ratio: 5/4; display: flex; align-items: center; justify-content: center; overflow: hidden">
+          <img src="{{ '/assets/images/products/camel-folded.jpg' | relative_url }}" alt="Camel wool blanket folded" style="width: 88%; height: 88%; object-fit: contain">
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px">
+          <img src="{{ '/assets/images/details/camel-blanket.jpg' | relative_url }}" alt="Camel blanket detail" style="width: 100%; display: block; border-radius: 6px; aspect-ratio: 1; object-fit: cover">
+          <img src="{{ '/assets/images/lifestyle/camel-campfire.jpg' | relative_url }}" alt="Camel blanket at the campfire" style="width: 100%; display: block; border-radius: 6px; aspect-ratio: 1; object-fit: cover">
+        </div>
+      </div>
+      <div>
+        <div style="font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; color: #C97A2B; font-weight: 700; margin-bottom: 14px">Colorway 01</div>
+        <h2 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(32px, 3.4vw, 46px); line-height: 1.08; margin: 0 0 10px">Camel</h2>
+        <div style="font-family: 'Instrument Serif', serif; font-size: 28px; color: #26221A; margin-bottom: 22px">$79</div>
+        <p style="font-size: 16px; line-height: 1.7; color: #4C463A; margin: 0 0 26px">The color of dry grass and late-afternoon light. Tonal overlock edge, debossed leather patch. It reads quiet by the fire and cleans up well on the sofa, too.</p>
+        <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 30px; font-size: 15px; color: #4C463A">
+          <div style="display: flex; gap: 10px"><span style="color: #C97A2B">—</span> 80% wool / 20% polyester, 500 gsm</div>
+          <div style="display: flex; gap: 10px"><span style="color: #C97A2B">—</span> 130 × 180 cm · 1.4 kg</div>
+          <div style="display: flex; gap: 10px"><span style="color: #C97A2B">—</span> Naturally flame-resistant, ember-safe</div>
+          <div style="display: flex; gap: 10px"><span style="color: #C97A2B">—</span> Rolls to 34 × 18 cm with the included strap</div>
+        </div>
+        <a href="{{ '/contact/' | relative_url }}" style="display: inline-block; background: #26221A; color: #FFF8EC; text-decoration: none; padding: 15px 34px; border-radius: 999px; font-weight: 700; font-size: 15px" style-hover="background: #C97A2B; color: #FFF8EC">Buy on Amazon</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Olive -->
+  <div id="olive" data-screen-label="Olive product" style="background: #33402C; padding: 96px 0">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 48px">
+      <div style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 64px; align-items: center">
+        <div style="color: #F4EFE5">
+          <div style="font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; color: #E5A85C; font-weight: 700; margin-bottom: 14px">Colorway 02</div>
+          <h2 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(32px, 3.4vw, 46px); line-height: 1.08; margin: 0 0 10px; color: #F4EFE5">Olive</h2>
+          <div style="font-family: 'Instrument Serif', serif; font-size: 28px; color: #E5A85C; margin-bottom: 22px">$79</div>
+          <p style="font-size: 16px; line-height: 1.7; color: rgba(244,239,229,0.82); margin: 0 0 26px">Forest-floor green with our signature orange overlock — a thin line of campfire running around the edge. The one people ask about.</p>
+          <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 30px; font-size: 15px; color: rgba(244,239,229,0.82)">
+            <div style="display: flex; gap: 10px"><span style="color: #E5A85C">—</span> 80% wool / 20% polyester, 500 gsm</div>
+            <div style="display: flex; gap: 10px"><span style="color: #E5A85C">—</span> 130 × 180 cm · 1.4 kg</div>
+            <div style="display: flex; gap: 10px"><span style="color: #E5A85C">—</span> Contrast reinforced stitching binding</div>
+            <div style="display: flex; gap: 10px"><span style="color: #E5A85C">—</span> Rolls to 34 × 18 cm with the included strap</div>
+          </div>
+          <a href="{{ '/contact/' | relative_url }}" style="display: inline-block; background: #F4EFE5; color: #26221A; text-decoration: none; padding: 15px 34px; border-radius: 999px; font-weight: 700; font-size: 15px" style-hover="background: #C97A2B; color: #FFF8EC">Buy on Amazon</a>
+        </div>
+        <div style="display: grid; gap: 18px">
+          <div style="background: #FFFFFF; border-radius: 6px; aspect-ratio: 5/4; display: flex; align-items: center; justify-content: center; overflow: hidden">
+            <img src="{{ '/assets/images/products/olive-folded.jpg' | relative_url }}" alt="Olive wool blanket folded, orange stitch edge" style="width: 88%; height: 88%; object-fit: contain">
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px">
+            <img src="{{ '/assets/images/details/wool-overlock.jpg' | relative_url }}" alt="Olive blanket stitching detail" style="width: 100%; display: block; border-radius: 6px; aspect-ratio: 1; object-fit: cover">
+            <img src="{{ '/assets/images/lifestyle/olive-campsite.jpg' | relative_url }}" alt="Olive blanket in use outdoors" style="width: 100%; display: block; border-radius: 6px; aspect-ratio: 1; object-fit: cover">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Coming soon -->
+  <div data-screen-label="Coming soon" style="max-width: 1200px; margin: 0 auto; padding: 96px 48px">
+    <div style="text-align: center; margin-bottom: 48px">
+      <div style="font-family: 'Caveat', cursive; font-size: 26px; color: #C97A2B; margin-bottom: 4px">what's next</div>
+      <h2 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(30px, 3.4vw, 46px); margin: 0">Joining the family soon</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px">
+      <div style="border: 1px dashed rgba(38,34,26,0.3); border-radius: 6px; padding: 40px 30px; text-align: center">
+        <div style="font-family: 'Instrument Serif', serif; font-size: 26px; margin-bottom: 8px">Wool Poncho</div>
+        <div style="font-size: 14px; color: #4C463A; line-height: 1.6">A blanket you can wear. Same wool, two snaps.</div>
+      </div>
+      <div style="border: 1px dashed rgba(38,34,26,0.3); border-radius: 6px; padding: 40px 30px; text-align: center">
+        <div style="font-family: 'Instrument Serif', serif; font-size: 26px; margin-bottom: 8px">Camp Cushion</div>
+        <div style="font-size: 14px; color: #4C463A; line-height: 1.6">Off-cut wool, zero waste, softer logs.</div>
+      </div>
+      <div style="border: 1px dashed rgba(38,34,26,0.3); border-radius: 6px; padding: 40px 30px; text-align: center">
+        <div style="font-family: 'Instrument Serif', serif; font-size: 26px; margin-bottom: 8px">Carry Strap</div>
+        <div style="font-size: 14px; color: #4C463A; line-height: 1.6">Leather &amp; brass, rolls any blanket tight.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div data-screen-label="Footer" style="background: #26221A; color: #EDE6D5">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 44px 48px; display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap">
+      <div style="font-family: 'Caveat', cursive; font-size: 30px; color: #EDE6D5">Lhaverse</div>
+      <div style="display: flex; gap: 30px; font-size: 14px">
+        <a href="{{ '/blankets/' | relative_url }}" style="color: rgba(237,230,213,0.75); text-decoration: none">Blankets</a>
+        <a href="{{ '/our-story/' | relative_url }}" style="color: rgba(237,230,213,0.75); text-decoration: none">Our Story</a>
+        <a href="{{ '/contact/' | relative_url }}" style="color: rgba(237,230,213,0.75); text-decoration: none">Contact</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div style="background: #26221A; color: #EDE6D5; margin-top: -1px">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 48px 32px">
+    <div style="border-top: 1px solid rgba(237,230,213,0.18); padding-top: 28px; display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 700; color: rgba(237,230,213,0.45)">
+      <div>© 2026 LHAVERSE. ALL RIGHTS RESERVED.</div>
+      <div>CHENGDU, CHINA · EARTH</div>
+    </div>
+  </div>
+</div>

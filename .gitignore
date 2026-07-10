@@ -1,0 +1,10 @@
+.DS_Store
+.bundle/
+.jekyll-cache/
+.sass-cache/
+_site/
+vendor/
+design/
+task_plan.md
+findings.md
+progress.md

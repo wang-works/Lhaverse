@@ -1,0 +1,17 @@
+title: Lhaverse
+description: A universe of sacred mountains.
+url: "https://wang-works.github.io"
+baseurl: "/Lhaverse"
+lang: en
+timezone: Asia/Shanghai
+
+markdown: kramdown
+permalink: pretty
+
+exclude:
+  - design
+  - Gemfile
+  - Gemfile.lock
+  - task_plan.md
+  - findings.md
+  - progress.md

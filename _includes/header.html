@@ -1,0 +1,17 @@
+<header class="site-header {% if page.dark_header %}site-header--overlay{% endif %}">
+  {% if page.announcement %}
+    <div class="announcement">Free domestic shipping on every blanket · Made for the long way home.</div>
+  {% endif %}
+  <div class="site-header__bar container-wide">
+    <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Lhaverse home">Lhaverse</a>
+    <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
+      <span></span><span></span><span></span>
+      <span class="sr-only">Open menu</span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <a class="{% if page.nav == 'blankets' %}is-active{% endif %}" href="{{ '/blankets/' | relative_url }}">Blankets</a>
+      <a class="{% if page.nav == 'story' %}is-active{% endif %}" href="{{ '/our-story/' | relative_url }}">Our story</a>
+      <a class="{% if page.nav == 'contact' %}is-active{% endif %}" href="{{ '/contact/' | relative_url }}">Contact</a>
+    </nav>
+  </div>
+</header>

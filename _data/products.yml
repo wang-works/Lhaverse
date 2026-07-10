@@ -1,0 +1,22 @@
+- name: Camel
+  slug: camel
+  number: "01"
+  tone: camel
+  color: "Dry grass & late-afternoon light"
+  description: "Quiet by the fire, effortlessly at home on the sofa. Camel is edged in tonal thread and finished with a debossed leather patch."
+  details:
+    - "80% wool / 20% recycled polyester · 500 gsm"
+    - "130 × 180 cm · 1.4 kg"
+    - "Naturally flame-resistant & ember-safe"
+    - "Rolls to 34 × 18 cm with the included strap"
+- name: Olive
+  slug: olive
+  number: "02"
+  tone: olive
+  color: "Forest floor & campfire"
+  description: "Forest-floor green interrupted by a fine orange overlock — a single bright line that carries the warmth of the fire around every edge."
+  details:
+    - "80% wool / 20% recycled polyester · 500 gsm"
+    - "130 × 180 cm · 1.4 kg"
+    - "Contrast reinforced edge binding"
+    - "Rolls to 34 × 18 cm with the included strap"

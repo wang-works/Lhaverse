@@ -1,0 +1,359 @@
+<style>
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/cbaf7ff2-8c04-4e38-902a-a2e48984327f.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/46d822a8-be4b-467b-b4cb-ae843888529b.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/f00a682d-a668-4508-86c3-97529b34d4d9.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/28d27fc6-3462-4304-a1f3-7848809abf4e.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/cbaf7ff2-8c04-4e38-902a-a2e48984327f.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/46d822a8-be4b-467b-b4cb-ae843888529b.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/f00a682d-a668-4508-86c3-97529b34d4d9.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/28d27fc6-3462-4304-a1f3-7848809abf4e.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/9b789147-25a9-41e7-9e42-ebcf222ecf5a.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/8e649b02-19b8-4b10-98ac-a1b2c19b94eb.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/88f41277-60bc-499e-8b24-a638fd49d45f.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/6899163f-6b7d-4b6a-9daf-f3d626f901f1.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/27f5c523-eb54-4d1d-988d-9bded4ccb46c.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/526cd763-b0dd-4e22-a55b-a2df7134d16c.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/27f5c523-eb54-4d1d-988d-9bded4ccb46c.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/526cd763-b0dd-4e22-a55b-a2df7134d16c.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/27f5c523-eb54-4d1d-988d-9bded4ccb46c.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/526cd763-b0dd-4e22-a55b-a2df7134d16c.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/27f5c523-eb54-4d1d-988d-9bded4ccb46c.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("{{ '/assets/fonts/reference/526cd763-b0dd-4e22-a55b-a2df7134d16c.woff2' | relative_url }}") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+    html, body { margin: 0; padding: 0; background: #F4EFE5; }
+    body { font-family: 'Karla', sans-serif; color: #26221A; }
+    a { color: #33402C; }
+    a:hover { color: #C97A2B; }
+    ::selection { background: #C97A2B; color: #FFF8EC; }
+  
+</style>
+<div style="background: #F4EFE5; min-width: 320px">
+
+  <!-- Announcement -->
+  
+    <div style="background: #33402C; color: #EDE6D5; text-align: center; padding: 9px 20px; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase">Free shipping on orders over $59 · Wrapped &amp; ready for the trail</div>
+  
+
+  <!-- Hero -->
+  <div data-screen-label="Hero" style="position: relative; min-height: 92vh; display: flex; flex-direction: column; overflow: hidden">
+    <img src="{{ '/assets/images/hero/snow-peaks-larch-hd.jpg' | relative_url }}" alt="Snow peaks and golden larch forest" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%">
+    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20,24,16,0.38) 0%, rgba(20,24,16,0.10) 40%, rgba(38,34,26,0.55) 100%)"></div>
+
+    <!-- Nav -->
+    <nav style="position: relative; z-index: 3; display: flex; align-items: center; justify-content: space-between; padding: 26px 48px; color: #FFF8EC">
+      <a href="{{ '/' | relative_url }}" style="font-family: 'Caveat', cursive; font-size: 34px; font-weight: 600; color: #FFF8EC; text-decoration: none; text-shadow: 0 1px 12px rgba(0,0,0,0.25)">Lhaverse</a>
+      <div style="display: flex; align-items: center; gap: 36px; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600">
+        <a href="{{ '/blankets/' | relative_url }}" style="color: #FFF8EC; text-decoration: none">Blankets</a>
+        <a href="{{ '/our-story/' | relative_url }}" style="color: #FFF8EC; text-decoration: none">Our Story</a>
+        <a href="{{ '/contact/' | relative_url }}" style="color: #FFF8EC; text-decoration: none">Contact</a>
+        <a href="{{ '/blankets/' | relative_url }}" style="color: #26221A; background: #FFF8EC; text-decoration: none; padding: 11px 22px; border-radius: 999px" style-hover="background: #C97A2B; color: #FFF8EC">Shop</a>
+      </div>
+    </nav>
+
+    <!-- Hero copy -->
+    <div style="position: relative; z-index: 2; flex: 1; display: flex; flex-direction: column; justify-content: flex-end; padding: 0 48px 72px; max-width: 900px">
+      <div style="font-family: 'Caveat', cursive; font-size: 30px; color: #F3C98B; margin-bottom: 6px">find your verse at the summit of soul</div>
+      <h1 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(52px, 7.5vw, 104px); line-height: 0.98; color: #FFF8EC; margin: 0 0 22px">Blankets born<br>for the open air</h1>
+      <p style="font-size: 18px; line-height: 1.6; color: rgba(255,248,236,0.88); max-width: 520px; margin: 0 0 32px">Dense-woven wool, stitched to outlast the seasons. From alpine mornings to campfire nights — Lhaverse keeps the cold on the outside.</p>
+      <div style="display: flex; gap: 14px; align-items: center">
+        <a href="{{ '/blankets/' | relative_url }}" style="background: #C97A2B; color: #FFF8EC; text-decoration: none; padding: 15px 32px; border-radius: 999px; font-weight: 700; font-size: 15px; letter-spacing: 0.04em" style-hover="background: #A9611C; color: #FFF8EC">Explore the blankets</a>
+        <a href="{{ '/our-story/' | relative_url }}" style="color: #FFF8EC; text-decoration: none; padding: 15px 24px; font-weight: 600; font-size: 15px; border-bottom: 1px solid rgba(255,248,236,0.5)">Read our story →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Story intro -->
+  <div data-screen-label="Story" style="padding: 110px 48px; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 72px; max-width: 1200px; margin: 0 auto; align-items: center">
+    <div>
+      <div style="font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; color: #C97A2B; font-weight: 700; margin-bottom: 18px">The Lhaverse way</div>
+      <h2 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(36px, 4vw, 54px); line-height: 1.08; margin: 0 0 24px">A blanket is the smallest<br>shelter you can carry.</h2>
+      <p style="font-size: 17px; line-height: 1.75; color: #4C463A; margin: 0 0 16px">We started Lhaverse with one belief: the best moments outside are the still ones — coffee at first light, stars after the fire dies down. Our wool blankets are made for exactly then.</p>
+      <p style="font-size: 17px; line-height: 1.75; color: #4C463A; margin: 0">Honest materials, reinforced edges, colors borrowed from the mountains themselves. Nothing you don't need; everything you'll be glad you brought.</p>
+    </div>
+    <div style="position: relative">
+      <img src="{{ '/assets/images/lifestyle/camel-campfire.jpg' | relative_url }}" alt="Wrapped in a Lhaverse blanket by the campfire" style="width: 100%; display: block; border-radius: 4px; aspect-ratio: 4/5; object-fit: cover">
+      <div style="position: absolute; left: -18px; bottom: 28px; background: #FFF8EC; padding: 14px 22px; border-radius: 3px; box-shadow: 0 12px 30px rgba(38,34,26,0.18); font-family: 'Caveat', cursive; font-size: 24px; color: #33402C; transform: rotate(-2deg)">fireside, October</div>
+    </div>
+  </div>
+
+  <!-- Products -->
+  <div data-screen-label="Products" style="background: #33402C; padding: 100px 48px 110px">
+    <div style="max-width: 1200px; margin: 0 auto">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 56px; flex-wrap: wrap">
+        <div>
+          <div style="font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; color: #E5A85C; font-weight: 700; margin-bottom: 14px">The collection</div>
+          <h2 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(34px, 3.6vw, 50px); line-height: 1.1; color: #F4EFE5; margin: 0">Two colors, taken<br>from the trail</h2>
+        </div>
+        <a href="{{ '/blankets/' | relative_url }}" style="color: #F4EFE5; text-decoration: none; font-weight: 600; font-size: 15px; border-bottom: 1px solid rgba(244,239,229,0.4); padding-bottom: 4px">View all blankets →</a>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px">
+        <a href="{{ '/blankets/#camel' | relative_url }}" style="text-decoration: none; color: #F4EFE5; display: block; background: #3C4A34; border-radius: 6px; overflow: hidden" style-hover="background: #46563D; color: #F4EFE5">
+          <div style="background: #FFFFFF; aspect-ratio: 5/4; display: flex; align-items: center; justify-content: center; overflow: hidden">
+            <img src="{{ '/assets/images/products/camel-folded.jpg' | relative_url }}" alt="Camel wool blanket, folded" style="width: 86%; height: 86%; object-fit: contain">
+          </div>
+          <div style="padding: 26px 28px 30px; display: flex; justify-content: space-between; align-items: baseline; gap: 16px">
+            <div>
+              <div style="font-family: 'Instrument Serif', serif; font-size: 28px; margin-bottom: 6px">Mountain Wool Blanket · Camel</div>
+              <div style="font-size: 14px; color: rgba(244,239,229,0.72); letter-spacing: 0.04em">80% wool · tonal overlock edge</div>
+            </div>
+            <div style="font-size: 20px; font-weight: 700; color: #E5A85C">$79</div>
+          </div>
+        </a>
+        <a href="{{ '/blankets/#olive' | relative_url }}" style="text-decoration: none; color: #F4EFE5; display: block; background: #3C4A34; border-radius: 6px; overflow: hidden" style-hover="background: #46563D; color: #F4EFE5">
+          <div style="background: #FFFFFF; aspect-ratio: 5/4; display: flex; align-items: center; justify-content: center; overflow: hidden">
+            <img src="{{ '/assets/images/products/olive-folded.jpg' | relative_url }}" alt="Olive wool blanket with orange stitching, folded" style="width: 86%; height: 86%; object-fit: contain">
+          </div>
+          <div style="padding: 26px 28px 30px; display: flex; justify-content: space-between; align-items: baseline; gap: 16px">
+            <div>
+              <div style="font-family: 'Instrument Serif', serif; font-size: 28px; margin-bottom: 6px">Mountain Wool Blanket · Olive</div>
+              <div style="font-size: 14px; color: rgba(244,239,229,0.72); letter-spacing: 0.04em">80% wool · signature orange stitch</div>
+            </div>
+            <div style="font-size: 20px; font-weight: 700; color: #E5A85C">$79</div>
+          </div>
+        </a>
+      </div>
+
+      <div style="margin-top: 28px; border: 1px dashed rgba(244,239,229,0.35); border-radius: 6px; padding: 26px 28px; display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap">
+        <div>
+          <div style="font-family: 'Instrument Serif', serif; font-size: 24px; color: #F4EFE5; margin-bottom: 4px">More gear on the way</div>
+          <div style="font-size: 14px; color: rgba(244,239,229,0.65)">Ponchos, cushions and camp textiles — joining the family soon.</div>
+        </div>
+        <a href="{{ '/contact/' | relative_url }}" style="color: #E5A85C; text-decoration: none; font-weight: 600; font-size: 15px">Get notified →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Craft -->
+  <div data-screen-label="Craft" style="padding: 110px 48px; max-width: 1200px; margin: 0 auto">
+    <div style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 72px; align-items: center">
+      <div style="display: grid; grid-template-columns: 1fr; gap: 20px">
+        <img src="{{ '/assets/images/details/wool-overlock.jpg' | relative_url }}" alt="Close-up of wool texture and reinforced stitching" style="width: 100%; display: block; border-radius: 4px; aspect-ratio: 16/10; object-fit: cover">
+      </div>
+      <div>
+        <div style="font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; color: #C97A2B; font-weight: 700; margin-bottom: 18px">Material &amp; craft</div>
+        <h2 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(34px, 3.6vw, 50px); line-height: 1.1; margin: 0 0 34px">Woven dense.<br>Finished by hand.</h2>
+        <div style="display: flex; flex-direction: column; gap: 26px">
+          <div style="display: flex; gap: 18px; align-items: baseline">
+            <div style="font-family: 'Instrument Serif', serif; font-size: 30px; color: #C97A2B; min-width: 74px">80%</div>
+            <div><div style="font-weight: 700; margin-bottom: 3px">Virgin wool</div><div style="font-size: 15px; line-height: 1.6; color: #4C463A">Naturally insulating, breathable and flame-resistant — warm even when damp.</div></div>
+          </div>
+          <div style="display: flex; gap: 18px; align-items: baseline">
+            <div style="font-family: 'Instrument Serif', serif; font-size: 30px; color: #C97A2B; min-width: 74px">20%</div>
+            <div><div style="font-weight: 700; margin-bottom: 3px">Polyester core</div><div style="font-size: 15px; line-height: 1.6; color: #4C463A">Added strength and anti-pilling durability for ground use, season after season.</div></div>
+          </div>
+          <div style="display: flex; gap: 18px; align-items: baseline">
+            <div style="font-family: 'Instrument Serif', serif; font-size: 30px; color: #C97A2B; min-width: 74px">2×</div>
+            <div><div style="font-weight: 700; margin-bottom: 3px">Reinforced overlock edge</div><div style="font-size: 15px; line-height: 1.6; color: #4C463A">Double-stitched binding in a contrast thread — our quiet signature.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lifestyle full-bleed -->
+  <div data-screen-label="Lifestyle" style="position: relative; min-height: 78vh; display: flex; align-items: flex-end; overflow: hidden">
+    <img src="{{ '/assets/images/lifestyle/olive-campsite-wide.png' | relative_url }}" alt="Olive blanket spread at a forest campsite" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20,24,16,0) 35%, rgba(20,24,16,0.55) 100%)"></div>
+    <div style="position: relative; z-index: 2; padding: 0 48px 64px; max-width: 760px">
+      <div style="font-family: 'Caveat', cursive; font-size: 28px; color: #F3C98B; margin-bottom: 8px">the fourth wall of your tent</div>
+      <h2 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(34px, 4vw, 56px); line-height: 1.05; color: #FFF8EC; margin: 0 0 26px">Ground cover at noon,<br>shoulder wrap by night.</h2>
+      <a href="{{ '/blankets/' | relative_url }}" style="display: inline-block; background: #FFF8EC; color: #26221A; text-decoration: none; padding: 14px 30px; border-radius: 999px; font-weight: 700; font-size: 15px" style-hover="background: #C97A2B; color: #FFF8EC">Find your color</a>
+    </div>
+  </div>
+
+  <!-- Newsletter + Footer -->
+  <div data-screen-label="Footer" style="background: #26221A; color: #EDE6D5">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 90px 48px 40px">
+      <div style="display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 64px; padding-bottom: 64px; align-items: center">
+        <div>
+          <h2 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(30px, 3vw, 42px); line-height: 1.12; margin: 0 0 12px">Letters from the trail</h2>
+          <p style="font-size: 16px; line-height: 1.65; color: rgba(237,230,213,0.7); margin: 0">New colors, campsite notes and small-batch drops. A few times a season, never more.</p>
+        </div>
+        <form style="display: flex; gap: 10px" data-reference-subscribe>
+          <input type="email" required="" placeholder="your@email.com" style="flex: 1; min-width: 0; background: rgba(237,230,213,0.08); border: 1px solid rgba(237,230,213,0.3); border-radius: 999px; padding: 15px 22px; color: #EDE6D5; font-size: 15px; font-family: 'Karla', sans-serif; outline: none">
+          <button type="submit" style="background: #C97A2B; color: #FFF8EC; border: none; border-radius: 999px; padding: 15px 28px; font-weight: 700; font-size: 15px; font-family: 'Karla', sans-serif; cursor: pointer" style-hover="background: #A9611C">Subscribe</button>
+        </form>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: center; gap: 24px; padding-top: 34px; flex-wrap: wrap">
+        <div style="font-family: 'Caveat', cursive; font-size: 30px; color: #EDE6D5">Lhaverse</div>
+        <div style="display: flex; gap: 30px; font-size: 14px">
+          <a href="{{ '/blankets/' | relative_url }}" style="color: rgba(237,230,213,0.75); text-decoration: none">Blankets</a>
+          <a href="{{ '/our-story/' | relative_url }}" style="color: rgba(237,230,213,0.75); text-decoration: none">Our Story</a>
+          <a href="{{ '/contact/' | relative_url }}" style="color: rgba(237,230,213,0.75); text-decoration: none">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div style="background: #26221A; color: #EDE6D5; margin-top: -1px">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 48px 32px">
+    <div style="border-top: 1px solid rgba(237,230,213,0.18); padding-top: 28px; display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 700; color: rgba(237,230,213,0.45)">
+      <div>© 2026 LHAVERSE. ALL RIGHTS RESERVED.</div>
+      <div>CHENGDU, CHINA · EARTH</div>
+    </div>
+  </div>
+</div>
